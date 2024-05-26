@@ -42,6 +42,7 @@ img {
   border: 4px solid rgba(247, 83, 7, 0.973);
   transition: 0.5s;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .text-white {
@@ -78,7 +79,7 @@ span {
   list-style: none;
 }
 a {
-  width: 100%;
+  width: 90%;
   padding: 10px 0 10px 0;
   text-align: center;
   cursor: pointer;
