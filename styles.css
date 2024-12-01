@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("./assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* body background */
+}
+
+.container {
+  /* container inside the body */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.social-media {
+  /* social media container inside the container */
+  position: relative;
+  width: 400px;
+  padding: 40px;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.53);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+img {
+  /* profile image */
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid rgba(247, 83, 7, 0.973);
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.text-white {
+  text-align: center;
+  color: white;
+}
+
+span {
+  color: #fff;
+  text-decoration: underline red;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.large {
+  color: #33fe05;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.large-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.links {
+  /* links container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+a {
+  /* all links set border size   || we did not use by id like .facebook .instagram. other because all links size padding margin  same */
+  width: 90%;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+  transition: 0.5s;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook {
+  /* here we does not use links because we want facebook color blue */
+  color: #fff;
+  background-color: #0256fd;
+}
+.facebook:hover {
+  /* when we click on the link facebook color change */
+  color: #0256fd;
+  background-color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #0256fd, 0 0 25px #0256fd, 0 0 50px #0256fd,
+    0 0 200px #0256fd;
+}
+
+.instagram {
+  /* here we does not use links because we want instagram color blue */
+  color: #fff;
+  background-color: #e1306c;
+}
+.instagram:hover {
+  color: #e1306c;
+  background-color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #e1306c, 0 0 25px #e1306c, 0 0 50px #e1306c,
+    0 0 200px #e1306c;
+}
+
+.twitter {
+  color: #fff;
+  background-color: #1da1f2;
+}
+.twitter:hover {
+  color: #1da1f2;
+  background-color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #1da1f2, 0 0 25px #1da1f2, 0 0 50px #1da1f2,
+    0 0 200px #1da1f2;
+}
+
+.linkedin {
+  color: #fff;
+  background-color: #00c3ff;
+}
+.linkedin:hover {
+  color: #00c3ff;
+  background-color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #00c3ff, 0 0 25px #00c3ff, 0 0 50px #00c3ff,
+    0 0 200px #00c3ff;
+}
+
+.github {
+  color: #fff;
+  background-color: #000;
+}
+.github:hover {
+  color: #000;
+  background-color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #000, 0 0 25px #000, 0 0 50px #000, 0 0 200px #000;
+}
+
+i {
+  /* its a icon style */
+  font-size: 30px;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .social-media {
+    width: 80%;
+    padding: 10px;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  i {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .social-media {
+    width: 90%;
+    padding: 10px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  i {
+    font-size: 20px;
+  }
+}
